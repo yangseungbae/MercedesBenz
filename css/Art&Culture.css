@@ -1,0 +1,445 @@
+body {
+    background: black;
+    font-family: 'Chosunilbo_myungjo';
+}
+h1 {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+h1 img {
+    width: 100px;
+}
+
+/* -------------------------nav------------------------- */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0;
+    font-size: 1em;
+}
+
+#nav>div>a {
+    padding: 0 10px;
+    color: #999;
+    transition: 0.5s;
+}
+
+#nav>div>a:hover {
+    color: white;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    /* margin: 0 auto; */
+    padding-top: 20px;
+    font-size: 1.4em;
+}
+
+.menuwrap {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    line-height: 1.5;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.menuwrap span{
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    transition: 0.3s;
+}
+.menuwrap>li:hover span{
+    width: 100%;
+}
+.menuwrap>li{
+    position: relative;
+}
+.toplogo{
+    display: none;
+}
+.sns{
+    display: none;
+}
+/*---------------------------ham-------------------------------*/
+.hammenu{
+    display: none;
+}
+
+/* -------------------------art------------------------- */
+.art{
+    width: 95%;
+    margin: 0 auto;
+}
+.art>div{
+    position: relative;
+    display:flex;
+    margin: 150px auto;
+    width: 80%;
+}
+.art ul img{
+    width: 100%;
+    transition: 0.5s;
+}
+.art .museum{
+    width: 100%;
+}
+.art .museum span{
+    top: 130px;
+    right: 50px;
+    font-size: 3em;
+}
+.art .culture{
+    width: 100%;
+}
+.art .culture>li:first-child{
+    transition-delay:0.2s;
+}
+.art .culture>li:last-child{
+    transition-delay:0.4s;
+}
+.art .culture span{
+    left: 50px;
+    top: 50px;
+    font-size: 2.5em;
+}
+.art ul>li{
+    position: relative;
+    overflow: hidden;
+}
+.art li>li:last-child{
+    margin-top: 20px;
+}
+.art ul>li:hover img{
+    width: 100%;
+    transform: scale(1.05, 1.05);
+}
+.art span{
+    position: absolute;
+}
+.back{
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+.back a{
+    transition: 0.2s;
+}
+.back span{
+    display: none;
+}
+.back a:hover{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 16px 10px;
+}
+
+
+
+/* -------------------------footer------------------------- */
+footer {
+    /* position: relative */
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+footer>ul>li {
+    width: 100%;
+    text-align: center;
+    /* margin: 5px 10px; */
+}
+
+footer>ul a {
+    color: #999;
+    transition: 0.5s;
+}
+
+footer>ul>li:hover>a {
+    color: white;
+}
+
+.footlogo {
+    width: 30%;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.footlogo img {
+    width: 120px;
+}
+
+.follow {
+    position: relative;
+    background: white;
+    width: 60%;
+    text-align: center;
+}
+
+.follow>a {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+}
+
+.follow img {
+    width: 40px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.follow img:hover {
+    opacity: 0.5;
+}
+
+.follow>span {
+    position: absolute;
+    top: 50px;
+    font-size: 2.5em;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+}
+@media screen and (max-width:1170px) {
+    h1 img {
+        width: 100px;
+    }
+
+    .menu {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+
+    .menuwrap {
+        width: 90%;
+    }
+
+    /* ---------------------------------art-------------------------------- */
+    .art>div{
+        position: relative;
+        display:flex;
+        margin: 150px auto;
+        width: 100%;
+    }
+    .art .museum span{
+        top: 50px;
+        right: 50px;
+        font-size: 2em;
+    }
+    .art .culture span{
+        left: 50px;
+        top: 50px;
+        font-size: 1.7em;
+    }
+    /* ---------------------------------footer-------------------------------- */
+
+    .follow img {
+        width: 30px;
+    }
+
+    .follow>a {
+        top: 40%;
+    }
+
+    .follow>span {
+        position: absolute;
+        top: 20px;
+        font-size: 2em;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+    }
+
+    footer>ul>li {
+        margin: 0 10px;
+        font-size: 0.9em;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+
+
+@media screen and (max-width:850px) {
+    h1 img {
+        width: 80px;
+    }
+    /*---------------------menu-----------------------*/
+    .menu {
+        position: fixed;
+        padding: 0;
+        letter-spacing: 1px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateX(-120%);
+        transition: 0.3s;
+    }
+    .activemenu{
+        transform: translateX(0);
+    }
+    .menuwrap{
+        position: relative;
+        display: block;
+        width: 400px;
+        height: 70%;
+        margin: 0;
+        background: black;
+        font-size: 1.5em;
+        line-height: 3;
+    }
+    .menuwrap>li{
+        margin: 0 10px;
+    }
+    .menuwrap>li>a{
+        color: #999;
+        transition: 0.5s;
+    }
+    .menuwrap>li:hover>a{
+        color: white;
+    }
+    .toplogo{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .toplogo img{
+        width: 100px;
+    }
+    .sns{
+        position: absolute;
+        display: block;
+        height: 30%;
+        width: 400px;
+        padding-top: 160px;
+        text-align: center;
+
+        background: white;
+    }
+    .sns img{
+        width: 50px;
+        margin: 0 10px;
+        transition: 0.5s;
+    }
+    .sns img:hover{
+        opacity: 0.3;
+    }
+    .sns>span{
+        position: absolute;
+        color:black;
+        top: 70px;
+        font-size: 2.5em;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hammenu{
+        position: fixed;
+        left: 20px;
+        top: 50px;
+        z-index: 200;
+        /* background-color: white; */
+        display: block;
+    }
+    .hammenu a{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/global3.png);
+        background-size: cover;
+        transition: 0.3s;
+    }
+    .hammenu .on{
+        background-image: url(../images/hamclose.png);
+    }
+
+    /* ---------------------------------art-------------------------------- */
+    .art>div{
+        position: relative;
+        display:flex;
+        margin: 100px auto;
+        width: 100%;
+    }
+    .art .museum span{
+        top: 10px;
+        right: 50px;
+        font-size: 1.5em;
+    }
+    .art .culture span{
+        left: 30px;
+        top: 10px;
+        font-size: 1.5em;
+    }
+
+    /* ---------------------------------footer-------------------------------- */
+
+    footer>ul {
+        flex-wrap: wrap;
+        width: 50%;
+        /* display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+        margin-top: 10px; */
+    }
+
+    .footlogo {
+        width: 60%;
+        margin: 40px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:580px){
+    .art>div{
+        display:block;
+        margin: 50px auto;
+        width: 100%;
+    }
+    .art .museum span{
+        left: 30px;
+        top: 30px;
+        font-size: 1.5em;
+    }
+    .art .culture span{
+        left: 30px;
+        top: 30px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:580px){
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 0;
+        font-size: 0.9em;
+    }
+    #nav>div>a {
+        padding: 0 5px;
+    }
+    .follow img {
+        width: 30px;
+        padding: 5px;
+    }
+
+}

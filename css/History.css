@@ -1,0 +1,479 @@
+body {
+    background: black;
+    font-family: 'Chosunilbo_myungjo';
+}
+h1 {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+h1 img {
+    width: 100px;
+}
+
+/* -------------------------nav------------------------- */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0;
+    font-size: 1em;
+}
+
+#nav>div>a {
+    padding: 0 10px;
+    color: #999;
+    transition: 0.5s;
+}
+
+#nav>div>a:hover {
+    color: white;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    /* margin: 0 auto; */
+    padding-top: 20px;
+    font-size: 1.4em;
+}
+
+.menuwrap {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    line-height: 1.5;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+.menuwrap span{
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    transition: 0.3s;
+}
+.menuwrap>li:hover span{
+    width: 100%;
+}
+.menuwrap>li{
+    position: relative;
+}
+.toplogo{
+    display: none;
+}
+.sns{
+    display: none;
+}
+/*---------------------------ham-------------------------------*/
+.hammenu{
+    display: none;
+}
+.background{
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+}
+.background>img{
+    position: absolute;
+    opacity: 0.35;
+}
+/* -------------------------Histroy------------------------- */
+.benz{
+    margin: 200px auto;
+    width: 70%;
+    /* font-size: 1.5em; */
+}
+.benz h1{
+    text-align: left;
+    font-size: 5em;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+.benz h2{
+    margin-bottom: 50px;
+    font-weight: 100;
+    font-size: 2.5em;
+}
+.benz li{
+    font-size: 1.7em;
+}
+.ceo ul span{
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.7em;
+}
+.ceo .kar span{
+    left: 0;
+}
+.ceo .daim span{
+    right: 0;
+}
+.ceo>div>ul{
+    display: flex;
+    width: 100%;
+}
+.ceo>.kar>ul>li{
+    position: relative;
+    line-height: 2;
+    margin: 30px;
+    padding-bottom: 50px;
+    width: 20%;
+}
+.ceo>.kar>ul>li:last-child{
+    width: 70%;
+}
+.ceo>div>ul img{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.ceo>.daim{
+    margin-top: 50px;
+}
+.ceo>.daim>ul>li{
+    width: 70%;
+    margin: 30px;
+    line-height: 2;
+}
+.ceo>.daim>ul>li:last-child{
+    position: relative;
+    margin: 30px;
+    padding-bottom: 50px;
+    width: 20%;
+}
+
+/* -------------------------history------------------------- */
+.history{
+    border-top: 2px solid white;
+    margin: 50px 0;
+}
+.history li span{
+    font-size: 0.8em;
+}
+
+.history h2{
+    font-size: 2.3em;
+    margin-top: 100px;
+}
+.history img{
+    width: 40%;
+    margin: 50px;
+}
+.history>div{
+    text-align: center;
+    margin-bottom: 300px;
+    transition-delay: 0.3s;
+}
+.history li{
+    position: relative;
+    line-height: 2;
+    font-size: 1.5em;
+    margin: 20px;
+}
+.history>div span{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.history>div>div{
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------footer------------------------- */
+footer {
+    /* position: relative */
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+footer>ul>li {
+    width: 100%;
+    text-align: center;
+    /* margin: 5px 10px; */
+}
+
+footer>ul a {
+    color: #999;
+    transition: 0.5s;
+}
+
+footer>ul>li:hover>a {
+    color: white;
+}
+
+.footlogo {
+    width: 30%;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.footlogo img {
+    width: 120px;
+}
+
+.follow {
+    position: relative;
+    background: white;
+    width: 60%;
+    text-align: center;
+}
+
+.follow>a {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+}
+
+.follow img {
+    width: 40px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.follow img:hover {
+    opacity: 0.5;
+}
+
+.follow>span {
+    position: absolute;
+    top: 50px;
+    font-size: 2.5em;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+}
+
+@media screen and (max-width:1170px){
+    h1 img {
+        width: 100px;
+    }
+
+    .menu {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+
+    .menuwrap {
+        width: 90%;
+    }
+/* -------------------------------------benz------------------------------------ */
+.background{
+    position: fixed;
+    top: 30%;
+    width: 100%;
+}
+.background>img{
+    position: absolute;
+    opacity: 0.35;
+    width: 100%;
+}
+    .benz{
+        width: 90%;
+    }
+    .benz li{
+        font-size: 1.2em;
+    }
+    .benz h2{
+        font-size: 2em;
+    }
+    .history>div>div{
+        font-size: 1.2em;
+        line-height: 2;
+    }
+    .history>div{
+        text-align: center;
+        margin-bottom: 100px;
+        transition-delay: 0.3s;
+    }
+/* -------------------------------------footer---------------------------------- */
+    .follow img {
+        width: 30px;
+    }
+
+    .follow>a {
+        top: 40%;
+    }
+
+    .follow>span {
+        position: absolute;
+        top: 20px;
+        font-size: 2em;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+    }
+
+    footer>ul>li {
+        margin: 0 10px;
+        font-size: 0.9em;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media screen and (max-width:850px){
+    h1 img {
+        width: 80px;
+    }
+/*---------------------menu-----------------------*/
+    .menu {
+        position: fixed;
+        padding: 0;
+        letter-spacing: 1px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateX(-120%);
+        transition: 0.3s;
+    }
+    .activemenu{
+        transform: translateX(0);
+    }
+    .menuwrap{
+        position: relative;
+        display: block;
+        width: 400px;
+        height: 70%;
+        margin: 0;
+        background: black;
+        font-size: 1.5em;
+        line-height: 3;
+    }
+    .menuwrap>li{
+        margin: 0 10px;
+    }
+    .menuwrap>li>a{
+        color: #999;
+        transition: 0.5s;
+    }
+    .menuwrap>li:hover>a{
+        color: white;
+    }
+    .toplogo{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .toplogo img{
+        width: 100px;
+    }
+    .sns{
+        position: absolute;
+        display: block;
+        height: 30%;
+        width: 400px;
+        padding-top: 160px;
+        text-align: center;
+
+        background: white;
+    }
+    .sns img{
+        width: 50px;
+        margin: 0 10px;
+        transition: 0.5s;
+    }
+    .sns img:hover{
+        opacity: 0.3;
+    }
+    .sns>span{
+        position: absolute;
+        color:black;
+        top: 70px;
+        font-size: 2.5em;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hammenu{
+        position: fixed;
+        left: 20px;
+        top: 50px;
+        z-index: 200;
+        /* background-color: white; */
+        display: block;
+    }
+    .hammenu a{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/global3.png);
+        background-size: cover;
+        transition: 0.3s;
+    }
+    .hammenu .on{
+        background-image: url(../images/hamclose.png);
+    }
+
+
+        /* ---------------------------------footer-------------------------------- */
+        .ceo>.kar>ul>li{
+            position: relative;
+            line-height: 1.7;
+            margin: 10px;
+            padding-bottom: 30px;
+            width: 40%;
+        }
+        .ceo>.daim>ul>li:last-child {
+            position: relative;
+            height: 420px;
+            margin: 10px;
+            padding-bottom: 0;
+            width: 40%;
+        }
+        .ceo .daim span {
+            right: 0;
+        }
+        .ceo>.daim>ul>li {
+            width: 70%;
+            margin: 10px;
+            line-height: 2;
+        }
+        .ceo ul span {
+            position: absolute;
+            bottom: 0;
+            font-size: 0.7em;
+        }
+        /* ---------------------------------footer-------------------------------- */
+
+        footer>ul {
+            flex-wrap: wrap;
+            width: 50%;
+            /* display: flex;
+            justify-content: space-between;
+            font-size: 1.2em;
+            margin-top: 10px; */
+        }
+    
+        .footlogo {
+            width: 60%;
+            margin: 40px 0;
+            text-align: center;
+        }
+}
