@@ -99,7 +99,7 @@ h1 img {
     font-size: 2.5em;
 }
 .benz li{
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 .ceo ul span{
     position: absolute;
@@ -460,6 +460,10 @@ footer>ul>li:hover>a {
             bottom: 0;
             font-size: 0.7em;
         }
+        .history img{
+            width: 80%;
+            margin: 50px;
+        }
         /* ---------------------------------footer-------------------------------- */
 
         footer>ul {
@@ -476,4 +480,111 @@ footer>ul>li:hover>a {
             margin: 40px 0;
             text-align: center;
         }
+}
+@media screen and (max-width:580px){
+    .benz {
+        width: 98%;
+        margin: 100px auto;
+    }
+    .benz li {
+        font-size: 1em;
+    }
+    .background{
+        top: 15%;
+    }
+    .background>img{
+        width: 100%;
+    }
+    .ceo>.kar>ul>li {
+        font-size: 1em;
+    }
+    .ceo ul span {
+        position: absolute;
+        bottom: 0;
+        font-size: 0.8em;
+    }
+    .ceo>.daim>ul>li {
+        font-size: 1em;
+    }
+    .ceo>.daim>ul>li:last-child {
+        position: relative;
+        height: 310px;
+        margin: 10px;
+        padding-bottom: 0;
+        width: 40%;
+    }
+    .history>div>div {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:480px){
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 0;
+        font-size: 0.9em;
+    }
+    #nav>div>a {
+        padding: 0 5px;
+    }
+    .benz {
+        width: 99%;
+        margin: 100px auto;
+    }
+    .follow img {
+        width: 30px;
+        padding: 5px;
+    }
+    .benz h2 {
+        font-size: 1.7em;
+    }
+    .ceo>div>ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .ceo>.kar>ul>li {
+        position: relative;
+        line-height: 1.7;
+        margin: 10px auto;
+        padding-bottom: 30px;
+        width: 80%;
+    }
+    .ceo .kar span {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ceo>.kar>ul>li:last-child {
+        width: 90%;
+    }
+    .ceo>.daim>ul>li:last-child {
+        position: absolute;
+        top: -550px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 540px;
+        margin: 0;
+        padding-bottom: 0;
+        width: 80%;
+    }
+    .ceo>.daim>ul>li:first-child {
+        margin: 600px auto 0;
+        /* left: 50%;
+        transform: translateX(-50%); */
+        position: relative;
+        width: 90%;
+        line-height: 1.7;
+    }
+    .ceo ul span {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        font-size: 0.8em;
+    }
+    .history img {
+        width: 100%;
+        margin: 0;
+    }
+
 }

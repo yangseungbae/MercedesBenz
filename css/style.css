@@ -769,7 +769,7 @@ footer>ul>li:hover>a {
         left: 50%;
         font-size: 1em;
         transform: translateX(-50%);
-        gap: 10px;
+        gap: 15px;
     }
 
     .category>.carpager>div>a {
