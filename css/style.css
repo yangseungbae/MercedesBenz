@@ -653,13 +653,17 @@ footer>ul>li:hover>a {
         width: 200%;
     }
 
-    /*---------------------museum-----------------------*/
     .pager>div>a {
-
-        padding: 4px 60px;
-
+        padding: 4px 50px;
+    }
+    .pager {
+        display: flex;
+        gap: 20px;
     }
     /*---------------------museum-----------------------*/
+    section {
+        margin: 150px 0 0 0;
+    }
     .museum {
         width: 99%;
         flex-wrap: wrap;
@@ -720,6 +724,17 @@ footer>ul>li:hover>a {
         border-radius: 7px;
         letter-spacing: 2px;
     }
+
+
+    .follow>span {
+        position: absolute;
+        top: 40px;
+        font-size: 1.4em;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -736,13 +751,15 @@ footer>ul>li:hover>a {
     .pager {
         gap: 20px;
     }
-    .pager a {
+    .pager>div>a {
         border: 1px solid white;
         border-radius: 5px;
         padding: 2px 40px;
         text-align: center;
     }
-
+    section {
+        margin: 150px 0 0 0;
+    }
     .museum>h2 {
         font-size: 2.5em;
         top: -20px;
@@ -769,7 +786,7 @@ footer>ul>li:hover>a {
         left: 50%;
         font-size: 1em;
         transform: translateX(-50%);
-        gap: 15px;
+        gap: 10px;
     }
 
     .category>.carpager>div>a {

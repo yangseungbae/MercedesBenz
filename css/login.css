@@ -2,6 +2,13 @@ body {
     background: black;
     font-family: 'Chosunilbo_myungjo';
 }
+
+.innerbox {
+    max-width: 1800px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 h1 {
     text-align: center;
     width: 100%;
@@ -72,130 +79,81 @@ h1 img {
 .hammenu{
     display: none;
 }
-.background{
-    position: fixed;
-    /* top: 0; */
-    width: 100%;
-}
-.background>img{
-    position: absolute;
-    opacity: 0.35;
-}
-/* -------------------------Histroy------------------------- */
-.benz{
+
+
+/*------------------login----------------------*/
+.login{
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    font-size: 24px;
     margin: 200px auto;
-    width: 70%;
-    /* font-size: 1.5em; */
+    background: rgba(0, 0, 0, 0.5);
 }
-.benz h1{
-    text-align: left;
-    font-size: 5em;
-    font-weight: 300;
-    margin-bottom: 100px;
+.login>h2{
+    letter-spacing: 5px;
+    padding-top: 20px;
 }
-.benz h2{
-    margin-bottom: 50px;
-    font-weight: 100;
-    font-size: 2.5em;
+input{
+    width: 250px;
+    color: black;
+    padding: 1px;
 }
-.benz li{
-    font-size: 1.7em;
-}
-.ceo ul span{
+.text{
     position: absolute;
-    bottom: 10px;
-    font-size: 0.7em;
-}
-.ceo .kar span{
-    left: 0;
-}
-.ceo .daim span{
-    right: 0;
-}
-.ceo>div>ul{
+    top: 30%;
+    text-align: center;
     display: flex;
-    width: 100%;
-}
-.ceo>.kar>ul>li{
-    position: relative;
-    line-height: 2;
-    margin: 30px;
-    padding-bottom: 50px;
-    width: 20%;
-}
-.ceo>.kar>ul>li:last-child{
-    width: 70%;
-}
-.ceo>div>ul img{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-.ceo>.daim{
-    margin-top: 50px;
-}
-.ceo>.daim>ul>li{
-    width: 70%;
-    margin: 30px;
-    line-height: 2;
-}
-.ceo>.daim>ul>li:last-child{
-    position: relative;
-    margin: 30px;
-    padding-bottom: 50px;
-    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 50px;
 }
 
-/* -------------------------history------------------------- */
-.history{
-    border-top: 2px solid white;
-    margin: 50px 0;
+.text>ul{
+    padding: 20px;
 }
-.history li span{
-    font-size: 0.8em;
-}
-
-.history h2{
-    font-size: 2.3em;
-    margin-top: 100px;
-}
-.history img{
-    width: 40%;
-    margin: 50px;
-}
-.history>div{
-    text-align: center;
-    margin-bottom: 300px;
-    transition-delay: 0.3s;
-}
-.history li{
-    position: relative;
-    line-height: 2;
-    font-size: 1.5em;
-    margin: 20px;
-}
-.history>div span{
+.login>a{
     position: absolute;
-    bottom: 0;
+    top: 70%;
+    left:50%;
+    transform: translate(-50%);
+    color: black;
+    width: 90%;
+    padding: 15px 0;
+    background: white;
+    transition: 0.3s;
+}
+.login>a:hover{
+    color: white;
+    background: black;
+    border: 1px solid white;
+}
+.find{
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    font-size: 16px;
     left: 50%;
     transform: translateX(-50%);
 }
-.history>div>div{
-    font-size: 1.5em;
-    line-height: 2;
+.find>ul{
+    display: flex;
+    justify-content: space-around;
 }
-
-
-
-
-
-
-
+.background>img{
+    position: absolute;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* opacity: 0.35; */
+}
 
 
 /* -------------------------footer------------------------- */
 footer {
-    /* position: relative */
+    position: relative;
+    z-index: 110;
     width: 100%;
     border-top: 1px solid white;
     display: flex;
@@ -269,7 +227,7 @@ footer>ul>li:hover>a {
     color: black;
 }
 
-@media screen and (max-width:1170px){
+@media screen and (max-width:1170px) {
     h1 img {
         width: 100px;
     }
@@ -282,36 +240,17 @@ footer>ul>li:hover>a {
     .menuwrap {
         width: 90%;
     }
-/* -------------------------------------benz------------------------------------ */
-.background{
-    position: fixed;
-    top: 30%;
-    width: 100%;
-}
-.background>img{
-    position: absolute;
-    opacity: 0.35;
-    width: 100%;
-}
-    .benz{
-        width: 90%;
-    }
-    .benz li{
-        font-size: 1.2em;
-    }
-    .benz h2{
-        font-size: 2em;
-    }
-    .history>div>div{
-        font-size: 1.2em;
-        line-height: 2;
-    }
-    .history>div{
-        text-align: center;
-        margin-bottom: 100px;
-        transition-delay: 0.3s;
-    }
-/* -------------------------------------footer---------------------------------- */
+        .background>img{
+            position: absolute;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            /* opacity: 0.35; */
+        }
+
+
+    /* ---------------------------------footer-------------------------------- */
+
     .follow img {
         width: 30px;
     }
@@ -337,9 +276,17 @@ footer>ul>li:hover>a {
     }
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:850px) {
     h1 img {
         width: 80px;
+    }
+
+    .background>img{
+        position: absolute;
+        width: 180%;
+        left: 50%;
+        transform: translateX(-50%);
+        /* opacity: 0.35; */
     }
 /*---------------------menu-----------------------*/
     .menu {
@@ -432,51 +379,24 @@ footer>ul>li:hover>a {
     }
 
 
-        /* ---------------------------------footer-------------------------------- */
-        .ceo>.kar>ul>li{
-            position: relative;
-            line-height: 1.7;
-            margin: 10px;
-            padding-bottom: 30px;
-            width: 40%;
-        }
-        .ceo>.daim>ul>li:last-child {
-            position: relative;
-            height: 420px;
-            margin: 10px;
-            padding-bottom: 0;
-            width: 40%;
-        }
-        .ceo .daim span {
-            right: 0;
-        }
-        .ceo>.daim>ul>li {
-            width: 70%;
-            margin: 10px;
-            line-height: 2;
-        }
-        .ceo ul span {
-            position: absolute;
-            bottom: 0;
-            font-size: 0.7em;
-        }
-        /* ---------------------------------footer-------------------------------- */
+    /* ---------------------------------footer-------------------------------- */
 
-        footer>ul {
-            flex-wrap: wrap;
-            width: 50%;
-            /* display: flex;
-            justify-content: space-between;
-            font-size: 1.2em;
-            margin-top: 10px; */
-        }
-    
-        .footlogo {
-            width: 60%;
-            margin: 40px 0;
-            text-align: center;
-        }
+    footer>ul {
+        flex-wrap: wrap;
+        width: 50%;
+        /* display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+        margin-top: 10px; */
+    }
+
+    .footlogo {
+        width: 60%;
+        margin: 40px 0;
+        text-align: center;
+    }
 }
+
 @media screen and (max-width:580px){
     .follow>span {
         position: absolute;
@@ -501,6 +421,69 @@ footer>ul>li:hover>a {
     .follow img {
         width: 30px;
         padding: 5px;
+    }
+
+    .login{
+        position: relative;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        font-size: 18px;
+        margin: 100px auto;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .login>h2{
+        letter-spacing: 5px;
+        padding-top: 20px;
+    }
+    input{
+        width: 150px;
+        color: black;
+        padding: 1px;
+    }
+    .text{
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 50px;
+    }
+    
+    .text>ul{
+        padding: 0;
+    }
+    .login>a{
+        position: absolute;
+        top: 75%;
+        left:50%;
+        transform: translate(-50%);
+        color: black;
+        width: 90%;
+        padding: 10px 0;
+        background: white;
+        transition: 0.3s;
+    }
+    .login>a:hover{
+        color: white;
+        background: black;
+        border: px solid white;
+    }
+    .find{
+        position: absolute;
+        width: 100%;
+        top: 57%;
+        font-size: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .background>img{
+        position: absolute;
+        width: 200%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }

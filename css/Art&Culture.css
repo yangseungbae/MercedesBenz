@@ -428,6 +428,17 @@ footer>ul>li:hover>a {
 }
 
 @media screen and (max-width:580px){
+    .follow>span {
+        position: absolute;
+        top: 40px;
+        font-size: 1.4em;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+    }
+}
+@media screen and (max-width:480px){
     #nav {
         display: flex;
         justify-content: space-between;
