@@ -757,6 +757,9 @@ footer>ul>li:hover>a {
         padding: 2px 40px;
         text-align: center;
     }
+    .menuwrap{
+        line-height: 2.5;
+    }
     section {
         margin: 150px 0 0 0;
     }
